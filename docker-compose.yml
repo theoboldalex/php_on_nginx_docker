@@ -1,3 +1,5 @@
+version: '3'
+
 services:
   web:
     image: nginx:stable-alpine
@@ -15,5 +17,4 @@ services:
       dockerfile: .docker/php/Dockerfile
     volumes:
       - .:/var/www/html
-    working_dir:
-      - /var/www/html
+    working_dir: /var/www/html
